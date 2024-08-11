@@ -1,14 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
-// import Post from './pages/Post';
 
 const App = () => {
   return (
-    <BrowserRouter>
-    
-    {/* <Router> */}
+    <Router>
       <Header />
       <main>
         <Routes>
@@ -16,8 +13,7 @@ const App = () => {
           {/* <Route path="/post/:id" element={<Post />} /> */}
         </Routes>
       </main>
-    {/* </Router> */}
-    </BrowserRouter>
+    </Router>
   );
 };
 
